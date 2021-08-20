@@ -7,16 +7,16 @@ public class Main {
         System.out.println("Баланс составляет: " + balance);
         System.out.println("Внесите средства на счет: ");
         Scanner scanner = new Scanner(System.in);
-        float plus_money = (float) scanner.nextDouble();
-        float total_balance;
-        if (plus_money >= 1000) {
-            bonus = (int) plus_money / 100;
+        float plusMoney = (float) scanner.nextDouble();
+        float totalBalance;
+        if (plusMoney >= 1000) {
+            bonus = (int) plusMoney / 100;
             System.out.println("Начисленные бонусы: " + bonus);
-            total_balance = balance + plus_money + bonus;
-            System.out.println("Баланс составляет: " + total_balance);
+            totalBalance = balance + plusMoney + bonus;
+            System.out.println("Баланс составляет: " + totalBalance);
         } else {
-            total_balance = balance + plus_money;
-            System.out.println("Баланс составляет: " + total_balance);
+            totalBalance = balance + plusMoney;
+            System.out.println("Баланс составляет: " + totalBalance);
         }
 
     }
